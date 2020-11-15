@@ -1,4 +1,4 @@
-package json_server;
+package github_Usage_RestAssurd;
 
 import org.testng.annotations.Test;
 
@@ -25,7 +25,7 @@ public class BiggDecimal3 {
 		given().
         config(RestAssured.config().jsonConfig(jsonConfig().numberReturnType(BIG_DECIMAL))).
         when().
-        get("/price").
+        get("/priceAll").
         then().
         body("price", is(new BigDecimal(12.12)));
 	}

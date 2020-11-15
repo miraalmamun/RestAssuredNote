@@ -1,0 +1,81 @@
+{
+  "status": "success",
+  "body": [
+    {
+      "id": 1,
+      "name": "ALL"
+    },
+    {
+      "id": 2,
+      "name": "VW_CMPNY"
+    },
+    {
+      "id": 3,
+      "name": "EDT_CMPNY"
+    },
+    {
+      "id": 4,
+      "name": "ADD_CMPNY"
+    },
+    {
+      "id": 5,
+      "name": "DLT_CMPNY"
+    },
+    {
+      "id": 6,
+      "name": "VW_GRP"
+    },
+    {
+      "id": 7,
+      "name": "EDT_GRP"
+    },
+    {
+      "id": 8,
+      "name": "ADD_GRP"
+    },
+    {
+      "id": 9,
+      "name": "DLT_GRP"
+    },
+    {
+      "id": 10,
+      "name": "VW_ACCNT"
+    },
+    {
+      "id": 11,
+      "name": "EDT_ACCNT"
+    },
+    {
+      "id": 12,
+      "name": "ADD_ACCNT"
+    },
+    {
+      "id": 13,
+      "name": "DLT_ACCNT"
+    },
+    {
+      "id": 14,
+      "name": "VW_INVC"
+    },
+    {
+      "id": 15,
+      "name": "EDT_INVC"
+    },
+    {
+      "id": 16,
+      "name": "ADD_INVC"
+    },
+    {
+      "id": 17,
+      "name": "DLT_INVC"
+    },
+    {
+      "id": 18,
+      "name": "ON_RCRD"
+    },
+    {
+      "id": 19,
+      "name": "OFF_RCRD"
+    }
+  ]
+}

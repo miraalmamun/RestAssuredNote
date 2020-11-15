@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="json_server.BiggDecimal3">
+      <class name="github_Usage_RestAssurd.Store">
         <methods>
-          <include name="decimal"/>
+          <include name="store"/>
         </methods>
-      </class> <!-- json_server.BiggDecimal3 -->
+      </class> <!-- github_Usage_RestAssurd.Store -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

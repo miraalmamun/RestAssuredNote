@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4673" started-at="2020-11-17T19:39:05Z" finished-at="2020-11-17T19:39:09Z">
+  <suite name="Default suite" duration-ms="4611" started-at="2020-11-22T04:29:45Z" finished-at="2020-11-22T04:29:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4673" started-at="2020-11-17T19:39:05Z" finished-at="2020-11-17T19:39:09Z">
-      <class name="toolsQA.Authentication">
-        <test-method status="PASS" signature="deleteBook()[pri:0, instance:toolsQA.Authentication@1f28c152]" name="deleteBook" duration-ms="4640" started-at="2020-11-17T19:39:05Z" finished-at="2020-11-17T19:39:09Z">
+    <test name="Default test" duration-ms="4611" started-at="2020-11-22T04:29:45Z" finished-at="2020-11-22T04:29:49Z">
+      <class name="shettyGoogleAPI.SpecBuilderTest">
+        <test-method status="PASS" signature="postMethod()[pri:0, instance:shettyGoogleAPI.SpecBuilderTest@731a74c]" name="postMethod" duration-ms="4558" started-at="2020-11-22T04:29:45Z" finished-at="2020-11-22T04:29:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteBook -->
-      </class> <!-- toolsQA.Authentication -->
+        </test-method> <!-- postMethod -->
+      </class> <!-- shettyGoogleAPI.SpecBuilderTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

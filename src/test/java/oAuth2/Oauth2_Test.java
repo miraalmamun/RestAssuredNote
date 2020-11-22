@@ -21,7 +21,7 @@ public class Oauth2_Test {
 		driver.findElement(By.cssSelector("")).sendKeys("Chanchal@Pabna00?", Keys.ENTER);
 		String url = driver.getCurrentUrl();
 */
-		 String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F5gH3F9uO_ZeAw7HDwmVT90QSpGkhx6MdKiRix_24RBCc3MFMm0lSnTW-qG8m3E2X_8OPfrIxBaKz_paloLoKFLM&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none#";
+		 String url = "https://rahulshettyacademy.com/getCourse.php?state=mirmamun&code=4%2F0AY0e-g6FqPVLnYKKX5nSrLvZFoBpznOdoSLh6SCqsc9l7aQvI_w6xOQwG51UsNW1dv25Mw&scope=email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none";
 		String partialcode = url.split("code=")[1];
 		String code = partialcode.split("&scope")[0];
 		System.out.println(code);

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="toolsQA.Authentication">
+      <class name="shettyGoogleAPI.AddTo">
         <methods>
-          <include name="bearerTokenAuthenticationTest"/>
+          <include name="postMethod"/>
         </methods>
-      </class> <!-- toolsQA.Authentication -->
+      </class> <!-- shettyGoogleAPI.AddTo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

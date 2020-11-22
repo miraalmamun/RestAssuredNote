@@ -13,7 +13,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class Authentication {
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void authenticateUserTest()
 	{   
 		//work very good
@@ -239,7 +239,7 @@ public class Authentication {
 	
 	
 	
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void deleteBook()
 	{
           // work very good

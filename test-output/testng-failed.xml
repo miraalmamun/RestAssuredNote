@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="shettyGoogleAPI.AddTo">
+      <class name="https.reqres.in.UsersReq">
         <methods>
-          <include name="postMethod"/>
+          <include name="post"/>
         </methods>
-      </class> <!-- shettyGoogleAPI.AddTo -->
+      </class> <!-- https.reqres.in.UsersReq -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -54,7 +54,7 @@ public class StartRest5_2 {
 				.body(Files.readAllBytes(Paths.get(path))).when().post("maps/api/place/add/json").then().assertThat()
 				.statusCode(200).body("scope", equalTo("APP")).header("server", "Apache/2.4.18 (Ubuntu)").extract()
 				.response().asString();
-		System.out.println(response);
+		System.out.println("Response Body: "+response);
       
 	}
 

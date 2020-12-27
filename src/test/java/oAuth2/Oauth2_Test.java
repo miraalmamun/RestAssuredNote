@@ -21,7 +21,14 @@ public class Oauth2_Test {
 		driver.findElement(By.cssSelector("")).sendKeys("Chanchal@Pabna00?", Keys.ENTER);
 		String url = driver.getCurrentUrl();
 */
-		 String url = "https://rahulshettyacademy.com/getCourse.php?state=mirmamun&code=4%2F0AY0e-g6FqPVLnYKKX5nSrLvZFoBpznOdoSLh6SCqsc9l7aQvI_w6xOQwG51UsNW1dv25Mw&scope=email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none";
+		
+		/**
+		 * Very important note: I am using 'urlEncodingEnabled(false)' method because "code=4%2F0AY0e"
+		 * here code has a special charector "%". It's useful to disableURL encoding.
+		 */
+		
+		             //https://rahulshettyacademy.com/getCourse.php?state=mirmamun&code=4%2F0AY0e-g6_DwrPT9w3pr2BtMjyFS8FM4WB4s1Fgg3TWipiaGFW0YeLfh8-z433fy6yoCEjKQ&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none#
+		 String url = "https://rahulshettyacademy.com/getCourse.php?state=mirmamun&code=4%2F0AY0e-g6_DwrPT9w3pr2BtMjyFS8FM4WB4s1Fgg3TWipiaGFW0YeLfh8-z433fy6yoCEjKQ&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none#";
 		String partialcode = url.split("code=")[1];
 		String code = partialcode.split("&scope")[0];
 		System.out.println(code);

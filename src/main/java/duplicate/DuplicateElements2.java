@@ -1,10 +1,9 @@
 package duplicate;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
 
 public class DuplicateElements2 {
 
@@ -18,11 +17,19 @@ public class DuplicateElements2 {
 		elements.add("Four");
 		elements.add("Five");
 		elements.add("Four"); /* Duplicate Element */
+		elements.add("One");
+		elements.add("Three");
+		elements.add("Two");
+		elements.add("Three"); /* Duplicate Element */
+		elements.add("Four");
+		elements.add("Five");
+		elements.add("Four"); /* Duplicate Element */
+
 
 		System.out.println("Elements : " + elements);
 
-		Set<String> set = new HashSet<>();
-		Set<String> duplicateElements = new HashSet<>();
+		LinkedHashSet<String> set = new LinkedHashSet<>();
+		LinkedHashSet<String> duplicateElements = new LinkedHashSet<String>();
 
 		for (String element : elements) {
 			if (!set.add(element)) {
@@ -30,8 +37,8 @@ public class DuplicateElements2 {
 			}
 		}
 
-		System.out.println("Uniq Elements : " + set);
-		System.out.println("Duplicate Elements : " + duplicateElements);
+		System.out.println("Uniq Elements LinkedHashSet : " + set);
+		System.out.println("Duplicate Elements LinkedHashSet : " + duplicateElements);
 
 		for (int i = 0; i < elements.size(); i++) {
 			String listElement = elements.get(i);

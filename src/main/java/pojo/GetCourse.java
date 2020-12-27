@@ -59,5 +59,12 @@ public class GetCourse {
 	public void setLinkedIn(String linkedIn) {
 		this.linkedIn = linkedIn;
 	}
+	@Override
+	public String toString() {
+		return "GetCourse [instructor=" + this.instructor + ", url=" + this.url + ", services=" + this.services + ", expertise="
+				+ this.expertise + ", courses=" + this.courses + ", linkedIn=" + this.linkedIn + "]";
+	}
+	
+	
 	
 }

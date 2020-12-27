@@ -1,8 +1,5 @@
 package libraryAPI;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -11,8 +8,15 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import payload.PayLoad;
+import random.RandomPractice;
 
 public class Library {
+	
+	
+	String isbn = RandomPractice.getRandonStringLower(4);
+	String aisle = RandomPractice.getNumberString(3);
+	
+	
 	
 	
 	@Test
@@ -22,7 +26,7 @@ public class Library {
 		RestAssured.baseURI = "http://216.10.245.166";
 		
 		RequestSpecification rs = RestAssured.given().log().all().header("Content-Type","application/json")
-		.body(PayLoad.addBook("xmmd","94"));
+		.body(PayLoad.addBookLibrary(isbn, aisle));
 		Response response = rs.when().post("/Library/Addbook.php");
 		ValidatableResponse vr = response.then().log().all().assertThat().statusCode(200);
 		String responseBody = vr.extract().response().asString();
@@ -40,6 +44,7 @@ public class Library {
 	@Test
 	public void addRetrieveBook2() throws Exception
 	{
+		/*
 		//http://216.10.245.166/Library/Addbook.php
 		String path = System.getProperty("user.dir")+"\\JSONFiles\\addBook.json";
 		RestAssured.baseURI = "http://216.10.245.166";
@@ -55,7 +60,7 @@ public class Library {
 		String id = jsonPath.get("ID");
 		System.out.println("Id: "+id);
 		
-		
+		*/
 		
 		
 	}

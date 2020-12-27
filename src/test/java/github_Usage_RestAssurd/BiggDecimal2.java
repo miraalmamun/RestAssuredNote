@@ -17,9 +17,16 @@ public class BiggDecimal2 {
 	@Test
 	public void decimal() {
 		
-		
-		
-		//equalTo(Arrays.asList("got it"));
+		/*
+		{
+			  "priceAll": [
+			    {
+			      "price": 12.12
+			    }
+			  ]
+			}
+			
+			*/
 		
 		baseURI = "http://localhost:3000";
 		//get("/priceAll").then().body("price", is(12.12f));

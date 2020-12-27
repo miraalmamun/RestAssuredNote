@@ -1,0 +1,9 @@
+{
+  "name":"Mamun",
+  "job":"leader",
+  "skills":["Java","C"],
+  "details":{
+    "companyName":"XYZ",
+    "emailId":"msaq@gmail.com"
+  }
+}

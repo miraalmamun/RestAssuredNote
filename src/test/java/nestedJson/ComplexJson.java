@@ -1,5 +1,6 @@
 package nestedJson;
 
+import java.util.LinkedHashMap;
 import org.testng.Assert;
 
 import io.restassured.path.json.JsonPath;
@@ -61,6 +62,9 @@ public class ComplexJson {
 		// 3. Print Title of the first course
 		
 		String firstCourse = js.get("courses[0].title");
+		
+		LinkedHashMap<String, Object> firstCourse2 = js.get("courses[0]");
+		System.out.println("====================="+firstCourse2);
 		System.out.println("Title of the first course: "+ firstCourse);
 		
 		// 4. Print All course titles and their respective Prices

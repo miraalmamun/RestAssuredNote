@@ -23,7 +23,8 @@ public class GetDuplicate {
 		}
 		
 		
-		
+		System.out.println("uniqNumber: "+uniqNumber);
+		System.out.println("dupliIntegers: "+dupliIntegers);
 		
 		
 		

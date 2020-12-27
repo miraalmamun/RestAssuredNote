@@ -15,6 +15,7 @@ public class Courses {
 	private List<WebAutomation> webAutomation;
 	private List<Api> api;
 	private List<Mobile> mobile;
+	
 	public List<WebAutomation> getWebAutomation() {
 		return webAutomation;
 	}
@@ -33,5 +34,10 @@ public class Courses {
 	public void setMobile(List<Mobile> mobile) {
 		this.mobile = mobile;
 	}
+	@Override
+	public String toString() {
+		return "Courses [webAutomation=" + this.webAutomation + ", api=" + this.api + ", mobile=" + this.mobile + "]";
+	}
+	
 	
 }

@@ -2,12 +2,67 @@ package payload;
 
 public class PayLoad {
 
+	
+	public static String addBookLibrary(String isbn,String aisle)
+	{
+		
+		String add = "{\r\n" + 
+				"\r\n" + 
+				"\"name\":\"MirJava2\",\r\n" + 
+				"\"isbn\":\""+isbn+"\",\r\n" + 
+				"\"aisle\":\""+aisle+"\",\r\n" + 
+				"\"author\":\"MirChan\"\r\n" + 
+				"}\r\n" + 
+				" \r\n" + 
+				"";
+		
+		return add;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static String addPlace() {
 		return "{\r\n" + "  \"location\": {\r\n" + "    \"lat\": -38.383494,\r\n" + "    \"lng\": 33.427362\r\n"
-				+ "  },\r\n" + "  \"accuracy\": 50,\r\n" + "  \"name\": \"Frontline house\",\r\n"
+				+ "  },\r\n" + "  \"accuracy\": 50,\r\n" + "  \"name\": \"Dream\",\r\n"
 				+ "  \"phone_number\": \"(+91) 983 893 3937\",\r\n"
-				+ "  \"address\": \"29, side layout, cohen 09\",\r\n" + "  \"types\": [\r\n" + "    \"shoe park\",\r\n"
-				+ "    \"shop\"\r\n" + "  ],\r\n" + "  \"website\": \"https://rahulshettyacademy.com\",\r\n"
+				+ "  \"address\": \"Please help me Allah\",\r\n" + "  \"types\": [\r\n" + "    \"shoe park\",\r\n"
+				+ "    \"shop\"\r\n" + "  ],\r\n" + "  \"website\": \"https://mydream.com\",\r\n"
 				+ "  \"language\": \"French-IN\"\r\n" + "}\r\n" + "";
 	}
 	
@@ -188,16 +243,15 @@ public class PayLoad {
 	{
 		return "{\r\n" + 
 				"    \"fields\": {\r\n" + 
-				"       \"project\":\r\n" + 
-				"       {\r\n" + 
-				"          \"key\": \"BAN\"\r\n" + 
-				"       },\r\n" + 
-				"       \"summary\": \"REST ye merry gentlemen.\",\r\n" + 
-				"       \"description\": \"Creating of an issue using project keys and issue type names using the REST API\",\r\n" + 
-				"       \"issuetype\": {\r\n" + 
-				"          \"name\": \"Bug\"\r\n" + 
-				"       }\r\n" + 
-				"   }\r\n" + 
+				"        \"project\": {\r\n" + 
+				"            \"key\": \"BAN\"\r\n" + 
+				"        },\r\n" + 
+				"        \"summary\": \"REST ye merry gentlemen.\",\r\n" + 
+				"        \"description\": \"Creating of an issue using project keys and issue type names using the REST API\",\r\n" + 
+				"        \"issuetype\": {\r\n" + 
+				"            \"name\": \"Bug\"\r\n" + 
+				"        }\r\n" + 
+				"    }\r\n" + 
 				"}";
 	}
 	

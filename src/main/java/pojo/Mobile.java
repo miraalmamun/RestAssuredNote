@@ -16,5 +16,9 @@ public class Mobile {
 	public void setPrice(String price) {
 		this.price = price;
 	}
-
+	@Override
+	public String toString() {
+		return "Mobile [courseTitle=" + this.courseTitle + ", price=" + this.price + "]";
+	}
+   
 }

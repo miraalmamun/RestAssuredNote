@@ -16,5 +16,10 @@ public class Api {
 	public void setPrice(String price) {
 		this.price = price;
 	}
+	@Override
+	public String toString() {
+		return "Api [courseTitle=" + this.courseTitle + ", price=" + this.price + "]";
+	}
 
+	
 }
